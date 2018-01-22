@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.shem8:material-login-2.1.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/material-login-2.1.1.aar/db7b5b83ed449697b594eae01d7d4e18/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/material-login-2.1.1.aar/db7b5b83ed449697b594eae01d7d4e18/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shem8/material-login/2.1.1/26c98e74571d91cb66dd23e81d5fc3fbb6d7c32c/material-login-2.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
