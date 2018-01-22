@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".CreateOrEditAlert">
+
+  <include
+      android:id="@+id/tool_bar"
+      layout="@layout/tool_bar"/>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </ScrollView>
+  <LinearLayout
+      android:layout_below="@id/tool_bar"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="@dimen/default_half_padding"
+      android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:id="@+id/alert_title"
+        android:hint="@string/title_hint"
+        android:gravity="start"
+        android:layout_gravity="top"
+        android:inputType="textPersonName"
+        android:background="@drawable/bottom_border"
+        android:padding="@dimen/default_full_padding"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_height"
+        android:id="@+id/alert_content"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:hint="@string/reminder_hint"
+        android:background="@drawable/bottom_border"
+        android:padding="@dimen/default_full_padding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="horizontal">
+
+      <LinearLayout
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:text="Categorie"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+          <RadioButton
+              android:id="@+id/radio0"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:checked="true"
+              android:textSize="14sp"
+              android:text="Events" />
+
+          <RadioButton
+              android:id="@+id/radio1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="14sp"
+              android:text="DS" />
+
+          <RadioButton
+              android:id="@+id/radio2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="14sp"
+              android:text="TAF" />
+        </RadioGroup>
+      </LinearLayout>
+
+      <ListView
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/alert_settings" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="valider"/>
+  </LinearLayout>
+
+</RelativeLayout>
